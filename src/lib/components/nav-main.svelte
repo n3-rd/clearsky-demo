@@ -20,9 +20,9 @@
 <Sidebar.Group>
 	<Sidebar.Menu>
 		{#each items as mainItem (mainItem.title)}
-			<Sidebar.MenuItem>
-				<Sidebar.MenuButton class="py-5 flex items-center gap-3 pl-9 hover:text-primary font-medium">
-					<mainItem.icon class="!w-5 !h-5" />
+			<Sidebar.MenuItem class="gap-4 !text-5xl">
+				<Sidebar.MenuButton class="!py-7 flex items-center gap-3 pl-9 hover:text-primary font-medium">
+					<mainItem.icon class="!w-6 !h-6" />
 					{mainItem.title}
 				</Sidebar.MenuButton>
 			</Sidebar.MenuItem>
