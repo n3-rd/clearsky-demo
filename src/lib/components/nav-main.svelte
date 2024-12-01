@@ -6,12 +6,12 @@
 
 	
 	let items = [
-		{ title: "Inbox", url: "/inbox", icon: Home },
-		{ title: "Contacts", url: "/contacts", icon: Users },
-		{ title: "Reports", url: "/reports", icon: ChartColumnBig },
-		{ title: "Leadbox", url: "/leadbox", icon: Smartphone },
-		{ title: "Leadform", url: "/leadform", icon: BookOpen },
-		{ title: "Settings", url: "/settings", icon: Settings },
+		{ title: "Inbox", url: "/inbox", icon: Home, href: "/" },
+		{ title: "Contacts", url: "/contacts", icon: Users, href: "/contacts" },
+		{ title: "Reports", url: "/reports", icon: ChartColumnBig, href: "/reports" },
+		{ title: "Leadbox", url: "/leadbox", icon: Smartphone, href: "/leadbox" },
+		{ title: "Leadform", url: "/leadform", icon: BookOpen, href: "/leadform" },
+		{ title: "Settings", url: "/settings", icon: Settings, href: "/settings" },
 	];
 
 	const sidebar = useSidebar();
@@ -21,10 +21,12 @@
 	<Sidebar.Menu>
 		{#each items as mainItem (mainItem.title)}
 			<Sidebar.MenuItem class="gap-4 !text-5xl">
-				<Sidebar.MenuButton class="!py-7 flex items-center gap-3 pl-9 hover:text-primary font-medium">
-					<mainItem.icon class="!w-6 !h-6" />
+				<a href={mainItem.href}>
+					<Sidebar.MenuButton class="!py-7 flex items-center gap-3 pl-9 hover:text-primary font-medium">
+						<mainItem.icon class="!w-6 !h-6" />
 					{mainItem.title}
-				</Sidebar.MenuButton>
+					</Sidebar.MenuButton>
+				</a>
 			</Sidebar.MenuItem>
 		{/each}
 	</Sidebar.Menu>
