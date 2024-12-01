@@ -52,7 +52,7 @@
                
             </div>
 		</header>
-		<main class="bg-background">{@render children()}</main>
+		<main class="bg-background px-4">{@render children()}</main>
 	</Sidebar.Inset>
 </Sidebar.Provider>
 
