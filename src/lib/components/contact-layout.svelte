@@ -34,12 +34,12 @@
         </div>
 
         <div class="mt-8">
-            <h2 class="text-xl text-gray-700 mb-4">History</h2>
-            <div class="bg-gray-50 rounded-lg p-6">
+            <h2 class="text-xl  mb-4">History</h2>
+            <div class="bg-gray-50 rounded-lg p-6  border border-dashed border-[#858585]">
                 <div class="flex justify-between items-center mb-4">
-                    <span class="text-gray-700">Nov 27, 2024</span>
+                    <span class="">Nov 27, 2024</span>
                     <div class="flex items-center gap-2">
-                        <span class="bg-gray-600 text-white px-3 py-1 rounded-md text-sm">Closed</span>
+                        <span class="bg-neutral-100 text-white px-3 py-1 rounded-md text-sm">Closed</span>
                         <button class="p-1">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="m18 15-6-6-6 6"/></svg>
                         </button>
@@ -47,17 +47,19 @@
                 </div>
                 
                 <div class="mb-4">
-                    <span class="bg-gray-600 text-white px-3 py-1 rounded-md text-sm">Canadian Trade-Ex</span>
+                    <span class="bg-neutral-100 text-white px-3 py-1 rounded-md text-sm">Canadian Trade-Ex</span>
                 </div>
                 
                 <div class="flex gap-2 items-center">
-                    <span class="text-gray-600">Assignee</span>
-                    <span class="text-gray-800">Rory Dredhart</span>
+                    <span class="text-neutral-100">Assignee</span>
+                    <span class="text-neutral-200">Rory Dredhart</span>
                 </div>
                 
                 <a href="#" class="text-blue-600 hover:underline block mt-4">View full conversation</a>
             </div>
         </div>
+        <Button class=" ml-auto">Save Changes</Button>
+
     </div>
     </Dialog.Header>
 </Dialog.Content>

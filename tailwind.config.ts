@@ -32,6 +32,10 @@ const config: Config = {
 					DEFAULT: "hsl(var(--secondary) / <alpha-value>)",
 					foreground: "hsl(var(--secondary-foreground) / <alpha-value>)"
 				},
+				neutral: {
+					100: "#666666",
+					200: "#565656"
+				},
 				dialog: "#F2F6FE",
 				destructive: {
 					DEFAULT: "hsl(var(--destructive) / <alpha-value>)",
